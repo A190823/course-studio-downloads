@@ -1,6 +1,6 @@
-# 课程资料工作台 2.0 · 联网预览版
+# 课程资料工作台 2.0 · 联网预览版（修订 1）
 
-**教师只需下载 [CourseStudio-Online.zip](https://github.com/A190823/course-studio-downloads/releases/download/v2.0.0-preview.20260908/CourseStudio-Online.zip)**，解压后双击「开始备课.exe」。首次点击会自动下载约 286 MB 运行组件，此后直接使用本机组件。
+**教师只需下载 [CourseStudio-Online.zip](https://github.com/A190823/course-studio-downloads/releases/download/v2.0.0-preview.20260908.1/CourseStudio-Online.zip)**，解压后双击「开始备课.exe」。首次点击会自动下载约 286 MB 运行组件，此后直接使用本机组件。
 
 - 无需手动安装 Python、Node.js、LibreOffice，无需管理员权限或命令行。
 - 支持续传、取消、SHA-256 完整性校验。失败不会清除原有课程。
@@ -17,3 +17,5 @@
 
 第三方组件保留各自许可。核心包包含 THIRD-PARTY-NOTICES.txt；渲染包包含 LICENSE.html、license.txt、NOTICE。
 LibreOffice 26.2.6.3 二进制未改动，仅裁剪非必要资源。[对应源码](https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.6.3/src/) / [许可说明](https://www.libreoffice.org/licenses/)。
+
+修订 1：准备过程不再依赖目录重命名；完成标记只在所有文件校验后写入。修复 AppData 加密目录下准备失败的问题，损坏副本原样保留。主程序及渲染组件不变，复用上一发布的固定版本组件。
